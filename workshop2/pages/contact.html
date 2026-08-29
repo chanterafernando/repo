@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        
+        <section>
+            <form>
+                    <legend><b>Personal Information</b></legend>
+
+                    <p>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" size="40" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" size="40" required>
+                    </p>
+
+                    <p>
+                        <label for="dob">Date of Birth:</label><br>
+                        <input type="date" id="dob" name="dob">
+                    </p>
+
+                    <legend><b>Academic Information</b></legend>
+
+                    <p>
+                        <label for="program">Degree Program:</label><br>
+                        <select id="program" name="program">
+                            <option value="">Select your program</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="software-engineering">Software Engineering</option>
+                            <option value="information-technology">Information Technology</option>
+                            <option value="data-science">Data Science</option>
+                            <option value="cybersecurity">Cybersecurity</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="semester">Semester:</label><br>
+                        <select id="semester" name="semester">
+                            <option value="">Select semester</option>
+                            <option value="1">1st Semester</option>
+                            <option value="2">2nd Semester</option>
+                            <option value="3">3rd Semester</option>
+                            <option value="4">4th Semester</option>
+                            <option value="5">5th Semester</option>
+                            <option value="6">6th Semester</option>
+                            <option value="7">7th Semester</option>
+                            <option value="8">8th Semester</option>
+                        </select>
+                    </p>
+
+                    <legend><b>Contact Details</b></legend>
+
+                    <p>
+                        <label for="reason">Reason for Contact:</label><br>
+                        <select id="reason" name="reason">
+                            <option value="">Select a reason</option>
+                            <option value="question">Question about courses</option>
+                            <option value="project">Project collaboration</option>
+                            <option value="schedule">Schedule inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="6" cols="50" placeholder="Write your message here..."></textarea>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="accept" name="accept" required>
+                        <label for="accept">I accept the terms and conditions</label>
+                    </p>
+
+                <p>
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear Form">
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p> My Website. All rights reserved </p>
+        <ul>
+            <li><a href="/privacidad"> Privacy Policy</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>    
+        </ul>
+        <p>Last updated: Agust 21, 2026 </p>
+    </footer>
+
+</body>
+</html>
