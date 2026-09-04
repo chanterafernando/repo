@@ -86,7 +86,7 @@ myfirstpage/
 - Programming, reading and sports
 - External links that open in a new tab
 
-### 🏛️ Clubs Page (clubs.html)
+### Clubs Page (clubs.html)
 - Cards with `card` effect (3D)
 - Clubs: Programming, Relaxation, Debate
 - Description, role and activities
