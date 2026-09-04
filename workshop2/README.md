@@ -13,8 +13,10 @@ The page represents my university profile, including information about my course
 myfirstpage/
 │
 ├── index.html # Main page (Home)
-├── styles.css # Main stylesheet
 ├── README.md # This file
+│
+├── css/
+│ └── styles.css # Main stylesheet
 │
 ├── pages/
 │ ├── courses.html # Courses page
@@ -32,7 +34,6 @@ myfirstpage/
 ├── sto.jpeg # Stochastic Process image
 ├── techn.gif # Technology Transfer image
 └── redes.jpeg # Networks image
-
 
 
 ## Technologies Used
