@@ -1,208 +1,112 @@
 # My University Website
 
+Personal website developed for the Web Applications Workshop.
 
+##  Project Description
 
-Sitio web personal desarrollado para el Workshop de Aplicaciones Web
+This project consists of a **personal website** developed entirely with **HTML5** and **CSS**. It was created as part of the Web Applications Workshop, demonstrating the use of semantic tags, tables, forms, and modern styles with CSS animations.
 
+The page represents my university profile, including information about my courses, class schedule, hobbies, clubs, and a contact form.
 
-
-##Descripción del Proyecto
-
-
-
-Este proyecto consiste en un \*\*sitio web personal\*\* desarrollado completamente con \*\*HTML5\*\* y \*\*CSS\*\*. Fue creado como parte del Workshop de Aplicaciones Web, demostrando el uso de etiquetas semánticas, tablas, formularios, y estilos modernos con animaciones CSS.
-
-
-
-La página representa mi perfil universitario, incluyendo información sobre mis cursos, horario de clases, pasatiempos, clubes y un formulario de contacto.
-
-
-
-## Estructura del Proyecto
+##  Project Structure
 
 myfirstpage/
-
 │
-
-├── index.html # Página principal (Home)
-
-├── styles.css # Hoja de estilos principal
-
-├── README.md # Este archivo
-
+├── index.html # Main page (Home)
+├── styles.css # Main stylesheet
+├── README.md # This file
 │
-
 ├── pages/
-
-│ ├── courses.html # Página de cursos
-
-│ ├── schedule.html # Página de horario (con tabla)
-
-│ ├── contact.html # Página de contacto (con formulario)
-
-│ ├── hobbies.html # Página de pasatiempos
-
-│ └── clubs.html # Página de clubes
-
+│ ├── courses.html # Courses page
+│ ├── schedule.html # Schedule page (with table)
+│ ├── contact.html # Contact page (with form)
+│ ├── hobbies.html # Hobbies page
+│ └── clubs.html # Clubs page
 │
-
 └── images/
-
-├── university.jpg # Imagen de la universidad
-
-├── profile.jpg # Foto de perfil
-
-├── wba.png # Imagen Web Applications
-
-├── proces.avif # Imagen Image Processing
-
-├── adv.jpeg # Imagen Advanced Programming
-
-├── sto.jpeg # Imagen Stochastic Process
-
-├── techn.gif # Imagen Technology Transfer
-
-└── redes.jpeg # Imagen Networks
+├── university.jpg # University image
+├── profile.jpg # Profile photo
+├── wba.png # Web Applications image
+├── proces.avif # Image Processing image
+├── adv.jpeg # Advanced Programming image
+├── sto.jpeg # Stochastic Process image
+├── techn.gif # Technology Transfer image
+└── redes.jpeg # Networks image
 
 
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-
-
-| Tecnología | Descripción |
-
+| Technology | Description |
 |------------|-------------|
-
-| \*\*HTML5\*\* | Estructura semántica del sitio web |
-
-| \*\*CSS3\*\* | Estilos, animaciones y diseño responsivo |
-
-| \*\*Apache\*\* | Servidor web local para desarrollo |
-
-
-
-## Características del Sitio
-
-
-
-###  Página Principal (index.html)
-
-\- Encabezado con título y navegación
-
-\- Información personal (nombre, carrera, semestre)
-
-\- Imagen de perfil
-
-\- Lista de intereses académicos
-
-
-
-###  Página de Cursos (courses.html)
-
-\- Tarjetas con animación `fade-in-up` y `card`
-
-\- Imágenes representativas por curso
-
-\- Instructores y temas de aprendizaje
-
-
-
-###  Página de Horario (schedule.html)
-
-\- Tabla de horario semanal con `rowspan` y `colspan`
-
-\- \*\*Colores por asignatura\*\*:
-
-&#x20; - 🔵 Web Applications
-
-&#x20; - 🟢 Technology Transfer
-
-&#x20; - 🟠 Advanced Programming
-
-&#x20; - 🟣 Image Processing
-
-&#x20; - 🔴 Networks
-
-&#x20; - 🩷 Stochastic Process
-
-\- Leyenda de colores
-
-\- Animaciones de entrada en celdas
-
-
-
-### Página de Contacto (contact.html)
-
-\- Formulario completo con:
-
-&#x20; - Nombre
-
-&#x20; - Correo electrónico
-
-&#x20; - Fecha de nacimiento
-
-&#x20; - Programa de estudio
-
-&#x20; - Semestre
-
-&#x20; - Motivo de contacto
-
-&#x20; - Mensaje
-
-&#x20; - Checkbox de aceptación
-
-&#x20; - Botones de enviar y limpiar
-
-
-
-###  Página de Pasatiempos (hobbies.html)
-
-\- Artículos con efecto `float` al hacer hover
-
-\- Programación, lectura y deportes
-
-\- Enlaces externos que abren en nueva pestaña
-
-
-
-### Página de Clubes (clubs.html)
-
-\- Tarjetas con efecto `card` (3D)
-
-\- Clubes: Programación, Relajación, Debate
-
-\- Descripción, rol y actividades
-
-
-
-##  Animaciones CSS Implementadas
-
-
-
-| Animación | Efecto | Elemento |
-
+| **HTML5** | Semantic structure of the website |
+| **CSS3** | Styles, animations and responsive design |
+| **Apache** | Local web server for development |
+
+## Website Features
+
+### Main Page (index.html)
+- Header with title and navigation
+- Personal information (name, major, semester)
+- Profile picture
+- List of academic interests
+
+### Courses Page (courses.html)
+- Cards with `fade-in-up` and `card` animations
+- Representative images per course
+- Instructors and learning topics
+
+### Schedule Page (schedule.html)
+- Weekly schedule table with `rowspan` and `colspan`
+- **Colors by subject**:
+  - 🔵 Web Applications
+  - 🟢 Technology Transfer
+  - 🟠 Advanced Programming
+  - 🟣 Image Processing
+  - 🔴 Networks
+  - 🩷 Stochastic Process
+- Color legend
+- Entry animations in cells
+
+### Contact Page (contact.html)
+- Complete form with:
+  - Name
+  - Email
+  - Birth date
+  - Study program
+  - Semester
+  - Contact reason
+  - Message
+  - Acceptance checkbox
+  - Submit and reset buttons
+
+### Hobbies Page (hobbies.html)
+- Articles with `float` effect on hover
+- Programming, reading and sports
+- External links that open in a new tab
+
+### 🏛️ Clubs Page (clubs.html)
+- Cards with `card` effect (3D)
+- Clubs: Programming, Relaxation, Debate
+- Description, role and activities
+
+## CSS Animations Implemented
+
+| Animation | Effect | Element |
 |-----------|--------|----------|
+| `fadeIn` | Fades in | Header, Nav, Main |
+| `float` | Floats on hover | Articles |
+| `typing` | Typewriter effect | Header titles |
+| `pulse` | Pulsing | Submit button |
+| `glow` | Glowing | Table on hover |
+| `popIn` | Pop effect | Table cells |
+| `card` | 3D effect on hover | Course/Club cards |
+| `fade-in-up` | Appears from below | Sections |
+| `marquee` | Moving text | Info banner |
 
-| `fadeIn` | Aparece desvaneciéndose | Header, Nav, Main |
+## Project Status
 
-| `float` | Flota al hacer hover | Artículos |
-
-| `typing` | Máquina de escribir | Títulos de encabezado |
-
-| `pulse` | Pulsación | Botón de enviar |
-
-| `glow` | Brillo | Tabla al hacer hover |
-
-| `popIn` | Aparece con efecto pop | Celdas de tabla |
-
-| `card` | Efecto 3D al hacer hover | Tarjetas de cursos/clubes |
-
-| `fade-in-up` | Aparece desde abajo | Secciones |
-
-| `marquee` | Texto en movimiento | Banner informativo |
-
-
+ **Version 1.0** - Fully functional website with all pages complete.
 
 
 
