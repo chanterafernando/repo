@@ -107,7 +107,7 @@ myfirstpage/
 
 ## Project Status
 
- **Version 1.0** - Fully functional website with all pages complete.
+- Fully functional website with all pages complete.
 
 
 
