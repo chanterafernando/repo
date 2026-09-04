@@ -1,4 +1,4 @@
-\# My University Website
+# My University Website
 
 
 
@@ -6,7 +6,7 @@ Sitio web personal desarrollado para el Workshop de Aplicaciones Web
 
 
 
-\##Descripción del Proyecto
+##Descripción del Proyecto
 
 
 
@@ -18,7 +18,7 @@ La página representa mi perfil universitario, incluyendo información sobre mis
 
 
 
-\## Estructura del Proyecto
+## Estructura del Proyecto
 
 myfirstpage/
 
@@ -66,7 +66,7 @@ myfirstpage/
 
 
 
-\## Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 
 
@@ -82,11 +82,11 @@ myfirstpage/
 
 
 
-\## Características del Sitio
+## Características del Sitio
 
 
 
-\###  Página Principal (index.html)
+###  Página Principal (index.html)
 
 \- Encabezado con título y navegación
 
@@ -98,7 +98,7 @@ myfirstpage/
 
 
 
-\###  Página de Cursos (courses.html)
+###  Página de Cursos (courses.html)
 
 \- Tarjetas con animación `fade-in-up` y `card`
 
@@ -108,7 +108,7 @@ myfirstpage/
 
 
 
-\###  Página de Horario (schedule.html)
+###  Página de Horario (schedule.html)
 
 \- Tabla de horario semanal con `rowspan` y `colspan`
 
@@ -132,7 +132,7 @@ myfirstpage/
 
 
 
-\### Página de Contacto (contact.html)
+### Página de Contacto (contact.html)
 
 \- Formulario completo con:
 
@@ -156,7 +156,7 @@ myfirstpage/
 
 
 
-\###  Página de Pasatiempos (hobbies.html)
+###  Página de Pasatiempos (hobbies.html)
 
 \- Artículos con efecto `float` al hacer hover
 
@@ -166,7 +166,7 @@ myfirstpage/
 
 
 
-\### Página de Clubes (clubs.html)
+### Página de Clubes (clubs.html)
 
 \- Tarjetas con efecto `card` (3D)
 
@@ -176,7 +176,7 @@ myfirstpage/
 
 
 
-\##  Animaciones CSS Implementadas
+##  Animaciones CSS Implementadas
 
 
 
