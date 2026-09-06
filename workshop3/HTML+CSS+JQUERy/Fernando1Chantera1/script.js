@@ -5,15 +5,25 @@ $(document).ready(function() {
     // ============================================
     $('#colorToggleBtn').on('click', function() {
         // Generate random color
-        var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-        // Apply to hero section
-        $('.hero').css('background-color', randomColor);
+        var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
         
-        // Add a little animation feedback
-        $(this).text('Color Changed!').css('background-color', '#2c3e50').css('color', '#fff');
+        // Change background color of the body
+        $('body').css('background-color', randomColor);
+        
+        // Feedback on button
+        $(this).text('✅ Color Changed!');
+        $(this).css({
+            'background-color': '#2c3e50',
+            'color': '#fff'
+        });
+        
         setTimeout(function() {
-            $('#colorToggleBtn').text('Change Background Color').css('background-color', '#fff').css('color', '#333');
-        }, 1000);
+            $('#colorToggleBtn').text('🎨 Change Background Color');
+            $('#colorToggleBtn').css({
+                'background-color': '#fff',
+                'color': '#333'
+            });
+        }, 1200);
     });
 
     // ============================================
@@ -21,19 +31,24 @@ $(document).ready(function() {
     // ============================================
     $('.gallery-img').on('click', function() {
         var imgSrc = $(this).attr('src');
+        var imgAlt = $(this).attr('alt');
         $('#modalImg').attr('src', imgSrc);
+        $('#modalImg').attr('alt', imgAlt);
         $('#imageModal').fadeIn(300);
+        $('body').css('overflow', 'hidden'); // Prevent scrolling
     });
 
     // Close modal when clicking X
     $('.modal-close').on('click', function() {
         $('#imageModal').fadeOut(300);
+        $('body').css('overflow', 'auto');
     });
 
     // Close modal when clicking outside the image
     $('#imageModal').on('click', function(e) {
         if (e.target === this) {
             $(this).fadeOut(300);
+            $('body').css('overflow', 'auto');
         }
     });
 
@@ -41,6 +56,7 @@ $(document).ready(function() {
     $(document).on('keydown', function(e) {
         if (e.key === 'Escape') {
             $('#imageModal').fadeOut(300);
+            $('body').css('overflow', 'auto');
         }
     });
 
@@ -88,18 +104,52 @@ $(document).ready(function() {
 
         // If form is valid, show success alert
         if (isValid) {
-            alert('Form submitted successfully!');
-            // Optionally reset the form
-            // $('#contactForm')[0].reset();
+            alert('✅ Form submitted successfully!');
+            // Reset the form
+            $('#contactForm')[0].reset();
+            // Remove any error styles
+            $('.form-group input, .form-group textarea').removeClass('error');
+            $('.error-message').removeClass('visible');
+        } else {
+            // Scroll to first error
+            $('html, body').animate({
+                scrollTop: $('.error:first').offset().top - 150
+            }, 500);
         }
     });
 
     // ============================================
-    // IV. EXTRA: Clear error styles on input
+    // IV. Clear error styles on input
     // ============================================
     $('#name, #email, #message').on('input', function() {
         $(this).removeClass('error');
         $(this).siblings('.error-message').removeClass('visible');
     });
 
+    // ============================================
+    // V. Smooth Scroll for Navigation
+    // ============================================
+    $('nav a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 100
+            }, 600);
+        }
+    });
+
+    // ============================================
+    // VI. Extra: Add hover effect to nav links
+    // ============================================
+    $('nav a').on({
+        mouseenter: function() {
+            $(this).css('transform', 'translateY(-2px)');
+        },
+        mouseleave: function() {
+            $(this).css('transform', 'translateY(0)');
+        }
+    });
+
+    console.log('✅ jQuery is working correctly!');
 });
