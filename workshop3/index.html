@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage - Chantera & Chicaiza</title>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- ============================================ -->
+    <!-- I. NAVIGATION BAR -->
+    <!-- ============================================ -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#">MyWebsite</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- II. HERO SECTION -->
+    <!-- ============================================ -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Interactive Page</h1>
+            <p>This is a workshop activity demonstrating HTML, CSS, and jQuery interactivity. Click the button below to change the background color randomly!</p>
+            <button id="colorToggleBtn" class="btn-hero">Change Background Color</button>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- III. IMAGE GALLERY -->
+    <!-- ============================================ -->
+    <section id="gallery" class="gallery-section">
+        <h2>Image Gallery</h2>
+        <p class="gallery-subtitle">Click on any image to enlarge it</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=1" alt="Random Image 1" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=2" alt="Random Image 2" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=3" alt="Random Image 3" class="gallery-img">
+            </div>
+            <div class="gallery-item">
+                <img src="https://picsum.photos/300/200?random=4" alt="Random Image 4" class="gallery-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- IV. CONTACT FORM -->
+    <!-- ============================================ -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                <small class="error-message" id="nameError">Please enter your name</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <small class="error-message" id="emailError">Please enter a valid email address</small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                <small class="error-message" id="messageError">Please enter a message (at least 10 characters)</small>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- V. POPUP MODAL (for image enlargement) -->
+    <!-- ============================================ -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" src="" alt="Enlarged Image">
+    </div>
+
+    <!-- ============================================ -->
+    <!-- VI. JQUERY SCRIPT -->
+    <!-- ============================================ -->
+    <script src="script.js"></script>
+
+</body>
+</html>
